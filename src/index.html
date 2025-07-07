@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>Assignment Starter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./stylesheets/main.css">
+    <meta charset="UTF-8">
+    <title>HTML Elements and CSS Selectors Demo</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
 </head>
-
 <body>
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 1400!!!!!</h1>
-<script type="module" src="./javascripts/main.js"></script>
+    <h1>HTML & CSS Demo</h1>
+
+    <section>
+        <h2>Sample Table: Student Grades</h2>
+        <table>
+            <caption>Student Grades Overview</caption>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Alice</td>
+                    <td>Math</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Bob</td>
+                    <td>Science</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Charlie</td>
+                    <td>English</td>
+                    <td>B</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Average</td>
+                    <td>B+</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h2>Form Demo</h2>
+        <form id="demo-form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+            </div>
+            <div>
+                 <label for="password">password</label>
+                 <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+
+          
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="120">
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Subscribe to newsletter
+                </label>
+            </div>
+            <div>
+                <span>Favorite Color:</span>
+                <label for="color-red"><input type="radio" id="color-red" name="color" value="red"> Red</label>
+                <label for="color-blue"><input type="radio" id="color-blue" name="color" value="blue"> Blue</label>
+                <label for="color-green"><input type="radio" id="color-green" name="color" value="green"> Green</label>
+            </div>
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Image Map Demo</h2>
+        
+
+        <map name="duckmap">
+            
+          <img src="images/images (1).jpg" usemap="#image-map">
+
+          <map name="image-map">
+              <area target="_blank" alt="beak" title="beak" href="https://en.wikipedia.org/wiki/Beak" coords="64,70,7" shape="circle">
+              <area target="_blank" alt="head" title="head" href="https://en.wikipedia.org/wiki/Head" coords="58,35,95,56" shape="rect">
+              <area target="_blank" alt="duck" title="duck" href="https://en.wikipedia.org/wiki/Duck" coords="166,132,12,238" shape="rect">
+          </map>
+        <p>Click different parts of the image for more info!</p>
+    </section>
 </body>
 </html>
