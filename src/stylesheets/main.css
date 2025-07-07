@@ -41,8 +41,8 @@ h1,h2 {
 
 img {
     display: block;
-    margin: 20px auto; /* Center the image horizontally and add vertical spacing */
-    border: 3px dotted #4a90e2; /* Dotted border */
+    margin: 20px auto; 
+    border: 3px dotted #4a90e2; 
     border-radius: 10px;
     max-width: 200px;    
     max-height: 200px;
@@ -78,7 +78,7 @@ header {
     color: #4a90e2;
 }
 
-ul , label , span {
+ul , label , span , input , label{
     list-style-type: none;
     color: #fff;
     margin: 30px auto; 
